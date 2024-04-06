@@ -1,0 +1,25 @@
+{
+  "name": "graphql-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/load-files": "^7.0.0",
+    "@graphql-tools/schema": "^10.0.3",
+    "apollo-server-express": "^3.13.0",
+    "async": "^3.2.5",
+    "core-js": "^3.36.1",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "mime": "^4.0.1",
+    "neo-async": "^2.6.2",
+    "tape": "^5.7.5"
+  }
+}

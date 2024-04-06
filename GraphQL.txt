@@ -1,0 +1,39 @@
+It decides how frontend should talk to backend API different from rest and restful APIS. It is basically a 
+QUERY language for APIS.
+
+POST/graphql or GET/graphql
+
+GRAPHQL VS REST
+
+graphql solves 1. overfetching 2. underfetching OF data
+
+One use of graphql is in E-commerce
+
+Advantages
+1. no underfetching
+2. no overfetching
+3. schemas and types
+4. speedup development
+
+Disadvantages
+1. Flexibility adds complexity
+2. Difficult to cache
+3. Not RESTful
+
+
+graphqlHTTP is an express middleware function that responds to express graphql queries
+
+Resolver
+When executing a query the value of each field is determined by calling a function called resolver.
+
+function_name(parent,args,context,info)
+
+parent --> root
+args--> adding filters on QUERY based on some condition (parameterised queries)
+context---> passing data among resolvers(data that is shared all among resolvers)
+info--->some info about current state of our operation
+
+The beauty of resolver is that our server can make async API call or async DB operations
+
+Mutations
+Apart from queries we can manipulate data in graphql
